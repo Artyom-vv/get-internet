@@ -7,10 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <link src="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.css"></link>
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/style.min.css">
-        <title>Тарифный план</title>
+        <title>Главная</title>
     </head>
     <body>
         <div class="wrapper">
@@ -58,14 +57,59 @@
     <div class="border"></div>
 </header>
 
-            <main class="main tariff-page">
-                <section class="tariff-page__cards cards">
+            <main class="main">
+                <section class="hero">
+                    <div class="container">
+                        <div class="swiper slider-hero">
+                            <div class="swiper-wrapper slider-hero__wrapper">
+                                <div class="swiper-slide slider-hero-slide slider-hero__slide flex" style="background-image: url('img/hero_img.png');">
+                                    <div class="slider-hero-slide__content flex flex_vertical flex_between">
+                                        <h2 class="title color_white">
+                                            Выгодное предложение для загородных домов
+                                        </h2>
+                                        <a href="tariff_detailed3.html" class="btn self-start">
+                                            <span class="span span_bold color_white">Смотреть подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slider-hero-slide slider-hero__slide flex" style="background-image: url('img/hero_img2.png');">
+                                    <div class="slider-hero-slide__content flex flex_vertical flex_between">
+                                        <h2 class="title color_white">
+                                            Быстрее, чем ты думаешь
+                                        </h2>
+                                        <a href="tariff_detailed1.html" class="btn self-start">
+                                            <span class="span span_bold color_white">Смотреть подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slider-hero-slide slider-hero__slide flex" style="background-image: url('img/hero_img3.png');">
+                                    <div class="slider-hero-slide__content flex flex_vertical flex_between">
+                                        <h2 class="title color_white">
+                                            Тариф для хороших каток
+                                        </h2>
+                                        <a href="tariff_detailed2.html" class="btn self-start">
+                                            <span class="span span_bold color_white">Смотреть подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="cards">
                     <div class="container cards__container">
-                        <h3 class="title">
-                            Наши тарифы
-                        </h3>
+                        <div class="cards__top">
+                            <h3 class="title">
+                                Наши тарифы
+                            </h3>
+                            <a href="tariff.html" class="link">
+                                <span class="span color_blue">
+                                    Смотреть все тарифы
+                                </span>
+                            </a>
+                        </div>
                         <div class="cards__list flex_jcenter">
-                            <div class="card card_with-border">
+                            <div class="card">
                                 <div class="card__content">
                                     <picture><source srcset="img/speed.svg" type="image/webp"><img src="img/speed.svg" alt="Особая скорость" class="card__img"></picture>
                                     <h4 class="title">Особая скорость</h4>
@@ -98,7 +142,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="card card_with-border">
+                            <div class="card">
                                 <div class="card__content">
                                     <picture><source srcset="img/controller.svg" type="image/webp"><img src="img/controller.svg" alt="Для хороших каток" class="card__img"></picture>
                                     <h4 class="title">Для хороших каток</h4>
@@ -126,7 +170,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="card card_with-border">
+                            <div class="card">
                                 <div class="card__content">
                                     <picture><source srcset="img/home.svg" type="image/webp"><img src="img/home.svg" alt="Загородный дом" class="card__img"></picture>
                                     <h4 class="title">Загородный дом</h4>
@@ -157,47 +201,54 @@
                         </div>
                     </div>
                 </section>
-                <section class="faq">
-                    <div class="container">
-                        <h3 class="faq__title title">Часто задаваемые вопросы</h3>
-                        <div class="faq__accordion-container accordion-container flex flex_vertical gap-12">
-                            <div class="accordion">
-                                <div class="flex flex_acenter gap-4 ac-trigger">
-                                    <p class="accordion__headline text text_headline">
-                                        Как провести домашний интернет
-                                    </p>
-                                    <picture><source srcset="img/icons/icons.svg#arrow_down" type="image/webp"><img src="img/icons/icons.svg#arrow_down" alt="Стрелочка вниз на аккордионе" class="accordion__icon icon icon_normal"></picture>
-                                </div>
-                                <div class="accordion__panel">
-                                    <p class="text text_body">
-                                        Процедура максимально проста:
-                                        <br>
-                                        <br>
-                                        1. Позвоните по номеру подключения 899-999-999-99
-                                        <br>
-                                        2. Укажите адрес, удобное время, когда мастер может прийти для подключения
-                                        <br>
-                                        3. В выбранный день, после предварительного звонка мастер приедет и подключит услуги.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="accordion">
-                                <div class="flex flex_acenter gap-4 ac-trigger">
-                                    <p class="accordion__headline text text_headline">
-                                        Как понять, какая скорость интернета мне нужна?
-                                    </p>
-                                    <picture><source srcset="img/icons/icons.svg#arrow_down" type="image/webp"><img src="img/icons/icons.svg#arrow_down" alt="Стрелочка вниз на аккордионе" class="accordion__icon icon icon_normal"></picture>
-                                </div>
-                                <div class="accordion__panel">
-                                    <p class="text text_body">
-                                        Чтобы выбрать подходящую скорость, ответьте на три вопроса:<br><br>
-1. Для каких целей мне нужен интернет: общение в соцсетях, просмотр фильмов и роликов, онлайн-игры?<br>
-2. Сколько подключенных к интернету устройств будут работать одновременно: ноутбук, стационарный компьютер, смартфон?<br>
-3. Буду ли я использовать устройства для одинаковых или разных целей?<br>
-                                    </p>
-                                </div>
-                            </div>
+                <section class="news">
+                    <div class="container flex flex_vertical gap-40">
+                        <div class="flex flex_between flex_acenter">
+                            <h3 class="title">Новости</h3>
+                            <a href="news.html" class="link">
+                                <span class="span color_blue">Смотреть все новости</span>
+                            </a>
                         </div>
+                        <div class="flex flex_jcenter gap-24 wrap">
+                            <a href="article.html" class="news-card">
+                                <picture><source srcset="img/router.webp" type="image/webp"><img src="img/router.png" alt="Картинка к новости" class="news-card__img"></picture>
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                            <a href="article.html" class="news-card">
+                                <picture><source srcset="img/router.webp" type="image/webp"><img src="img/router.png" alt="Картинка к новости" class="news-card__img"></picture>
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                            <a href="article.html" class="news-card">
+                                <picture><source srcset="img/router.webp" type="image/webp"><img src="img/router.png" alt="Картинка к новости" class="news-card__img"></picture>
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="take-gift">
+                    <div class="take-gift__container container flex flex_acenter gap-40 flex_between">
+                        <div class="take-gift__offer flex flex_vertical gap-40">
+                            <h2 class="title">Не пропустите сезон скидок от
+                                <span class="color_blue">GetInternet</span>
+                            </h2>
+                            <form class="take-gift__form-group flex gap-24">
+                                <label class="take-gift__label flex flex_vertical gap-12">
+                                    <span class="text">Оставьте свою почту:</span>
+                                    <input type="text" class="take-gift__input input" placeholder="e-mail">
+                                </label>
+                                <button type="submit" class="btn self-end"><span class="span span_bold color_white">Отправить</span></button>
+                            </form>
+                        </div>
+                        <picture><source srcset="img/gifts.webp" type="image/webp"><img class="take-gift__img" src="img/gifts.png" alt="Подарки"></picture>
                     </div>
                 </section>
             </main>
@@ -217,7 +268,12 @@
 </footer>
 
         </div>
-        <script src="https://unpkg.com/accordion-js@3.2.0/dist/accordion.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"
+            integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="js/script.min.js"></script>
     </body>
 </html>
